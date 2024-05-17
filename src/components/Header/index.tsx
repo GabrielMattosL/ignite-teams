@@ -1,10 +1,22 @@
-import { Container, Logo } from "./styles";
-import logoImg from '@assets/logo.png';
+import React from "react";
+import { Container, Logo, BackButton, BackIcon } from "./styles";
+import logoImg from "@assets/logo.png";
 
-export function Header() {
-    return (
-        <Container>
-            <Logo source={logoImg}/>
-        </Container>
-    )
+type Props = { showBackButton?: boolean };
+
+export function Header({ showBackButton = false }: Props) {
+  const handleBackButtonPress = () => {
+    console.log("BackButton was pressed");
+  };
+
+  return (
+    <Container>
+      {showBackButton && (
+        <BackButton onPress={handleBackButtonPress}>
+          <BackIcon />
+        </BackButton>
+      )}
+      <Logo source={logoImg} />
+    </Container>
+  );
 }

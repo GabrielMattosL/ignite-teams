@@ -2,6 +2,7 @@ import { Header } from '@components/Header';
 import { Highlight } from '@components/Highlight';
 import { Container } from './styles';
 import { GroupCard } from '@components/GroupCard';
+import { Button } from '@components/Button';
 import { useState } from 'react';
 import { FlatList } from 'react-native';
 import { ListEmpty } from '@components/ListEmpty';
@@ -34,6 +35,13 @@ export function Groups() {
           />
         )}
       />
+
+          <Button
+            title='Criar nova tuma'
+          >
+            
+          </Button>
+
     </Container>
   );
 }

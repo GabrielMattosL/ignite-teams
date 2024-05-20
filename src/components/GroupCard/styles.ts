@@ -8,12 +8,12 @@ export const Container = styled(TouchableOpacity)`
 
   background-color: ${({ theme }) => theme.COLORS.GRAY_500};
   border-radius: 6px;
-  
+
   flex-direction: row;
   align-items: center;
-  
+
   padding: 24px;
-  margin-bottom: 12px;
+  margin-bottom: 12px
 `;
 
 export const Title = styled.Text`
@@ -22,11 +22,10 @@ export const Title = styled.Text`
   font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
 `;
 
-export const Icon = styled(UsersThree).attrs(({ theme}) => ({
+export const Icon = styled(UsersThree).attrs(({ theme }) => ({
   size: 32,
   color: theme.COLORS.GREEN_700,
   weight: 'fill'
 }))`
   margin-right: 20px;
-
 `;

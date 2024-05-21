@@ -7,7 +7,7 @@ export function Input({ ...rest }: TextInputProps) {
   const { COLORS } = useTheme();
 
   return (
-    <Container 
+    <Container
       placeholderTextColor={COLORS.GRAY_300}
       {...rest} 
     />
